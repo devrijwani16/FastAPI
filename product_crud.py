@@ -31,7 +31,7 @@ def create_product(product: Product, response: Response):
         product.id = id
         products.append(product)
         response.status_code = 201
-        return {'isSuccess':True, 'message' : 'Product Created, Successfully', 'product': product}
+        return {'isSuccess':True, 'message' : 'Product Created Successfully', 'product': product}
     except Exception as e:
         print(e)
         response.status_code = 500
